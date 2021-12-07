@@ -1,12 +1,13 @@
 ---
 ## Prepare bastion host
 ## run this best from cmd-line like this
-##   ansible-playbook -i invetory/hosts --ask-pass prep_bastion_host.yml
+##   ansible-playbook -i inventory/hosts --ask-pass prep_bastion_host.yml
 ##   this will ask for root password of bastion host
 
 
 - hosts: bastion_host
   gather_facts: no
+  remote_user: root
 
   vars:
     # derived via htpasswd  -cB /tmp/xx root
@@ -64,4 +65,3 @@
        modification_time: preserve
        access_time: preserve
      become: true
-
