@@ -56,8 +56,7 @@ This brings you to "CREATE SOURCE" page
 * **PROJECT**             : HPE OneView Workshp
 * **INVENTORY FILE**      : inventory/hosts
 * **VERBOSITY**           : 1 
-UPDATE OPTIONS: <br>
-choose all update options: <br>
+* **UPDATE OPTIONS**      : choose all update options: <br>
 OVERWRITE; 
 OVERWRITE VARIABLES; 
 UPDATE ON LAUNCH; 
