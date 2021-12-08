@@ -1,6 +1,6 @@
 ---
 - hosts: bastion_host
-  gather_facts: no
+  gather_facts: yes
   ##  become: true
 
   tasks:
