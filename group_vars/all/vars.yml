@@ -23,8 +23,10 @@ deployment_network_name: "Redhat_workload"
 # adjustable VMware installation related vars:
 org_iso:  "{{ bastion_iso_dir }}/VMware-VMvisor-Installer-7.0U2a-17867351.x86_64.iso"
 cust_iso: "{{ bastion_iso_dir }}/{{ cust_iso_file }}"
-esxi_rootpw: "{{ vault_esxi_rootpw }}"
-## Hint: put vault_ - variables into a seperate vault file named "vault"
+esxi_rootpw: "Bechtle123!"
+
+#esxi_rootpw: "{{ vault_esxi_rootpw }}"
+## BETTER ALTERNATIVE for Production: USE VAULT: put vault_ - variables into a seperate vault file named "vault"
 ## encrpyt that file with:  ansible-vault encrypt group_vars/all/vault
 ## assure the credential for file-encryption is put into tower as "vault"
 ## and the credential is available to the playbooks
