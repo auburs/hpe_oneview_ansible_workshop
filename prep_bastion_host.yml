@@ -11,7 +11,7 @@
 
   vars:
     # derived via htpasswd  -cB /tmp/xx root
-    password: "$6$BFpZ2bb9.RsgULe9$s83ZlFRYHjTCb33oGou66OyVnYNQcIrFjWtxY6NH6At.zgJHivuOyEx1ZhwrCEpa/inFE4eplsB98bVyxNzZa."
+    password: "Bechtle123!"
 
   tasks:
    - name: Install packages needed
